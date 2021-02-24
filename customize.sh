@@ -6,9 +6,9 @@
 
 ui_print "Checking ROM and Kernel"
 sleep 1
-ui_print "° kernel    : $(uname -r) "
+ui_print "° Kernel    : $(uname -r) "
 sleep 0.5
-ui_print "° rom       : $(getprop ro.product.name) "
+ui_print "° ROM       : $(getprop ro.product.name) "
 sleep 1
   platform=$(getprop ro.build.version.incremental)
   model=$(getprop ro.build.version.incremental)
@@ -17,12 +17,12 @@ sleep 1
     ui_print " "
     ui_print " "
     ui_print " "
+    ui_print "Module installed √"
   else
     abort  "× [ $model ] not supported"
     ui_print " "
     ui_print " "
     ui_print " "
+    ui_print "Module is not installed √"
   fi
 sleep 0.5
-
-ui_print "Module installed √"
