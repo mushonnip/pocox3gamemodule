@@ -17,12 +17,12 @@ sleep 1
     ui_print " "
     ui_print " "
     ui_print " "
-    ui_print "Module installed √"
+    ui_print "√ Module installed"
   else
     abort  "× [ $model ] not supported"
     ui_print " "
     ui_print " "
     ui_print " "
-    ui_print "Module is not installed √"
+    ui_print "× Module is not installed"
   fi
 sleep 0.5
